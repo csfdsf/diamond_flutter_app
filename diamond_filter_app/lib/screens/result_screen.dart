@@ -24,17 +24,18 @@ class _ResultPageState extends State<ResultPage> {
   final Set<String> _cart = {};
   String _selectedSort = 'price_asc'; // default
 
-  final Map<String, String> shapeToImageMap = {
-    "Round": "circle.png",
-    "Pearl": "pearl.png",
-    "Emerald": "emerald.png",
-    "Asscher": "asscher.png",
-    "Marquise": "marquise.png",
-    "Radiant": "radiant.png",
-    "Oval": "oval.png",
-    "Heart": "heart.png",
-    "Princess": "princess.png",
+  final Map<String, String> shapeCodeToImage = {
+    "BR": "circle.png",
+    "PR": "pearl.png",
+    "EM": "emerald.png",
+    "CU": "asscher.png",
+    "MQ": "marquise.png",
+    "RAD": "radiant.png",
+    "OV": "oval.png",
+    "HS": "heart.png",
+    "PS": "princess.png",
   };
+
 
   @override
   void initState() {
@@ -79,10 +80,7 @@ class _ResultPageState extends State<ResultPage> {
           ),
         ],
       ),
-
       backgroundColor: Colors.grey[100],
-
-      // ✅ Filtered Diamonds List
       body: BlocBuilder<FilterBloc, FilterState>(
         builder: (context, state) {
           final diamonds = List<Diamond>.from(state.filteredDiamonds);
@@ -100,7 +98,8 @@ class _ResultPageState extends State<ResultPage> {
             itemCount: diamonds.length,
             itemBuilder: (context, index) {
               final diamond = diamonds[index];
-              final imageName = shapeToImageMap[widget.selectedShape ?? ''] ?? '';
+              final imageName = shapeCodeToImage[diamond.shape] ?? 'default.png';
+
 
               return Slidable(
                 key: ValueKey(diamond.lotId),
