@@ -8,7 +8,16 @@ A new Flutter project.
 
 A Flutter mobile application that allows users to filter and search for diamonds based on specific criteria like shape, carat, lab, color, and clarity. Users can also view search results, manage a shopping cart, and calculate totals including tax, discounts, and delivery.
 
+## 📸 Screenshots
 
+### 🧮 Filter Screen
+![Filter Screen]([screenshots](https://raw.githubusercontent.com/csfdsf/ecommerce-flutter/main/assets/screenShots/filter_screen.png)
+
+### 💎 Results Screen
+![Results Screen](screenshots/result_screen.png)
+
+### 🛒 Cart Screen
+![Cart Screen](screenshots/cart_screen.png)
 
 ##  Project Structure
 
