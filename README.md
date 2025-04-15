@@ -11,13 +11,13 @@ A Flutter mobile application that allows users to filter and search for diamonds
 ## 📸 Screenshots
 
 ### 🧮 Filter Screen
-![Filter Screen]([screenshots](https://raw.githubusercontent.com/csfdsf/diamond_filter_app/main/assets/screenShots/filter_screen.jpg)
+![Filter Screen]([screenshots](https://raw.githubusercontent.com/csfdsf/diamond_flutter_app/main/diamond_filter_app/screenshots/filter_screen.jpg)
 
 ### 💎 Results Screen
-![Results Screen](screenshots/result_screen.png)
+![Results Screen](https://raw.githubusercontent.com/csfdsf/diamond_flutter_app/main/diamond_filter_app/screenshots/filter_details_screen.jpg)
 
 ### 🛒 Cart Screen
-![Cart Screen](screenshots/cart_screen.png)
+![Cart Screen](https://raw.githubusercontent.com/csfdsf/diamond_flutter_app/main/diamond_filter_app/screenshots/cart_screen.jpg)
 
 ##  Project Structure
 
